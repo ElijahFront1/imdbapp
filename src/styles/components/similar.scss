@@ -1,0 +1,54 @@
+@media (max-width: 1199.98px) {
+    .type-year,
+    .genre {
+        display: none;
+    }
+}
+.plot {
+    font-size: 0.7rem;
+}
+@media (max-width: 768px) {
+    .type-year,
+    .genre {
+        display: block;
+    }
+    .plot {
+        font-size: 1rem;
+    }
+}
+
+.similar {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #171717;
+}
+
+.similar:hover .overlay {
+    opacity: 0.8;
+}
+.similar:hover .content {
+    opacity: 1;
+}
+
+.content {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,15 @@
+@media (max-width: 1199px) {
+    .search-page {
+        background-color: #111111;
+    }
+}
+@media (max-width: 767px) {
+    .search-page {
+        .spinner {
+            display: none;
+        }
+    }
+}
+.search-page {
+    font-family: "Montserrat";
+}
