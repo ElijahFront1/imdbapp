@@ -3,4 +3,4 @@
 
 ### `npm start`
 
-live demo https://richappdeploy.herokuapp.com/moviepage
+live demo https://richappdeploy.herokuapp.com/
