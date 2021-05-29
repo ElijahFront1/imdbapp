@@ -3,4 +3,4 @@
 
 ### `npm start`
 
-live demo https://dashboard.heroku.com/apps/beedep
+live demo https://richappdeploy.herokuapp.com/moviepage
