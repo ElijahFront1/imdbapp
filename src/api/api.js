@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const fetchMovie = async (searchValue) => {
     try {
-        const response = await axios.get(`http://www.omdbapi.com/?t=${searchValue}&apikey=4fff3540&plot=full`);
+        const response = await axios.get(`https://www.omdbapi.com/?t=${searchValue}&apikey=4fff3540&plot=full`);
         if (response.data.Title) {
             sessionStorage.setItem('imdbID', response.data.imdbID);
             return response.data
@@ -17,7 +17,7 @@ export const fetchMovie = async (searchValue) => {
 
 export const fetchMovieById = async () => {
     try {
-        const response = await axios.get(`http://www.omdbapi.com/?i=${sessionStorage.getItem('imdbID')}&apikey=4fff3540&plot=full`)
+        const response = await axios.get(`https://www.omdbapi.com/?i=${sessionStorage.getItem('imdbID')}&apikey=4fff3540&plot=full`)
         return response.data
     } catch (e) {
         alert(e)
@@ -64,7 +64,7 @@ export const fetchTrailer = async () => {
 
 export const fetchSimilarMovieData = async (imdbID) => {
     try {
-        const response = await axios.get(`http://www.omdbapi.com/?i=tt${imdbID.replace(/[^0-9]/g, '')}&apikey=4fff3540&plot=short`)
+        const response = await axios.get(`https://www.omdbapi.com/?i=tt${imdbID.replace(/[^0-9]/g, '')}&apikey=4fff3540&plot=short`)
         return response.data
     } catch (e) {
         alert(e)

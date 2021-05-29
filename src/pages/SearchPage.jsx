@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Col, Row, Spinner } from 'react-bootstrap'
 import FindMovieCard from '../components/FindMovieCard';
 import Search from '../components/Search';
-// import Video from '../video/background.mp4';
+import Video from '../video/background.mp4';
 import '../styles/pages/search-page.scss'
 import { fetchMovie } from '../api/api.js';
 
@@ -83,7 +83,7 @@ function SearchPage() {
                     </Col>
                 </Row>
             </Col>
-            {/* <video
+            <video
                 autoPlay
                 loop
                 muted
@@ -98,7 +98,7 @@ function SearchPage() {
                     zIndex: '-1',
                 }}>
                 <source src={Video} type="video/mp4" />
-            </video> */}
+            </video>
         </Row >
     )
 }
