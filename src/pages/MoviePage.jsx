@@ -61,7 +61,7 @@ function MoviePage() {
                             color: 'white',
                             textDecoration: 'none',
                         }}>
-                            <span>Richbee Shows</span>
+                            <span>IMDb App</span>
                         </NavLink>
                     </Col>
                     <Col xs={{ span: 12 }} sm={{ span: 5 }}
@@ -138,7 +138,7 @@ function MoviePage() {
                                     paddingTop: '3rem',
                                     lineHeight: '2.3rem',
                                 }}>
-                                <span>{`Watch ${movie.Title} on Richbee Shows`}</span>
+                                <span>{`Watch ${movie.Title}`}</span>
                             </Col>
                             <Col sm={{ span: 12 }} lg={{ span: 8 }}
                                 style={{
@@ -180,7 +180,7 @@ function MoviePage() {
                 lineHeight: '4rem',
                 textAlign: 'center'
             }}>
-                <span>Richbee Shows</span>
+                <span>IMDb App</span>
             </Col>
         </Row >
     )
